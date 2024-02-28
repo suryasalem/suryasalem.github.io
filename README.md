@@ -1,4 +1,4 @@
-# [Portfolio website] (https://suryasalem.github.io)
+# [Portfolio website](https://suryasalem.github.io)
 
 # Getting Started with Create React App
 
