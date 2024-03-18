@@ -5,9 +5,9 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-  position: absolute;
-  right: 0;
-  animation: App-logo-slide 5s linear infinite;
+  position: relative;
+  overflow: hidden;
+  animation: App-logo-slide 10s linear infinite;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {
@@ -42,10 +42,10 @@
 } */
 
 @keyframes App-logo-slide {
-  from {
-    right: -50px;
+  0% {
+    transform: translateX(100vw);
   }
-  to {
-    right: calc(100vw + 100px);
+  100% {
+    transform: translateX(-100%);
   }
 }
