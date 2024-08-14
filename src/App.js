@@ -1,7 +1,6 @@
-import logo from './logo.svg';
+// import logo from './pingu-no-bg.png';
 import './App.css';
 import './realtimecolors.css';
-import Header from './components/navbar';
 import Homepage from './components/homepage';
 
 function App() {

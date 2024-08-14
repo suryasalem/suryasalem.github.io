@@ -16,7 +16,12 @@ const Homepage = () => {
           <a href="#about" className="navlink">
             about
           </a>
-          <a href="#resume" className="navlink">
+          <a
+            href={`${process.env.PUBLIC_URL}/build-files/Surya_Salem_Resume.pdf`}
+            rel="noreferrer"
+            target="_blank"
+            className="navlink"
+          >
             resume
           </a>
         </nav>
@@ -43,7 +48,12 @@ const Homepage = () => {
           </a>
         </div>
         <div className="footer-box-four">
-          <a href="https://www.suryasalem.github.io/build-files/Surya_Salem_Resume.pdf" target="_blank" className="resume">
+          <a
+            href={`${process.env.PUBLIC_URL}/build-files/Surya_Salem_Resume.pdf`}
+            rel="noreferrer"
+            target="_blank"
+            className="resume"
+          >
             resume
           </a>
           <a

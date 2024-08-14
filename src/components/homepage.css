@@ -34,11 +34,12 @@ body {
 .nav {
   display: flex;
   gap: 2vw;
+  font-family: "Cabinet Grotesk Variable", sans-serif;
 }
 
 .navlink {
   /* border: 1px solid red; */
-  /* color: white; */
+  color: #faf5ed;
   text-decoration: none;
   font-size: 20px;
 }
