@@ -39,8 +39,9 @@ const Homepage = () => {
         <div className="footer-box-one">
           <div className="footer-name">Surya Salem</div>
           <div className="portfolio-version">portfolio v1.24</div>
+          <div className="copyright">all rights reserved</div>
         </div>
-        <div className="footer-box-two">all rights reserved</div>
+        <div className="footer-box-two"></div>
         <div className="footer-box-three">
           <div className="contact">contact me at</div>
           <a href="mailto:suryasalem24@outlook.com" className="contact-email">
