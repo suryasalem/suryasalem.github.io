@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.de53593f.css",
+    "main.css": "/static/css/main.ad55adf4.css",
     "main.js": "/static/js/main.cc07bdc3.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/Satoshi-VariableItalic.ttf": "/static/media/Satoshi-VariableItalic.9519fea9567e2405bc08.ttf",
@@ -68,12 +68,12 @@
     "static/media/CabinetGrotesk-Black.woff2": "/static/media/CabinetGrotesk-Black.811203077326fa601dfa.woff2",
     "static/media/cursor.cur": "/static/media/cursor.6296e6d8b55bb1cb2fa4.cur",
     "index.html": "/index.html",
-    "main.de53593f.css.map": "/static/css/main.de53593f.css.map",
+    "main.ad55adf4.css.map": "/static/css/main.ad55adf4.css.map",
     "main.cc07bdc3.js.map": "/static/js/main.cc07bdc3.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de53593f.css",
+    "static/css/main.ad55adf4.css",
     "static/js/main.cc07bdc3.js"
   ]
 }
