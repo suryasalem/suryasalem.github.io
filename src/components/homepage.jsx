@@ -24,38 +24,44 @@ const Homepage = () => {
       <main className="main">
         <div className="intro">HI, I'M SURYA</div>
         <div className="tagline">
-          a software engineer passionate in{" "}
-          <span className="highlight">full-stack development</span>
+          <div className="tagline-text">
+            a software engineer passionate in &nbsp;
+          </div>
+          <div className="highlight">full-stack development</div>
         </div>
       </main>
       <footer className="footer">
-        <div className="footer-left">
+        <div className="footer-box-one">
           <div className="footer-name">Surya Salem</div>
-          <div className="portfolio-year">portfolio 2024</div>
+          <div className="portfolio-version">portfolio v1.24</div>
         </div>
-        <div className="footer-center">all rights reserved</div>
-        <div className="footer-right">
+        <div className="footer-box-two">all rights reserved</div>
+        <div className="footer-box-three">
+          <div className="contact">contact me at</div>
           <a href="mailto:suryasalem24@outlook.com" className="contact-email">
             suryasalem24@outlook.com
           </a>
-          <div className="social-icons">
-            <a
-              href="https://www.github.com/suryasalem"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-icon"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/suryasalem"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-icon"
-            >
-              LinkedIn
-            </a>
-          </div>
+        </div>
+        <div className="footer-box-four">
+          <a href="https://www.suryasalem.github.io/build-files/Surya_Salem_Resume.pdf" target="_blank" className="resume">
+            resume
+          </a>
+          <a
+            href="https://www.github.com/suryasalem"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            github
+          </a>
+          <a
+            href="https://www.linkedin.com/in/suryasalem"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            linkedin
+          </a>
         </div>
       </footer>
     </body>

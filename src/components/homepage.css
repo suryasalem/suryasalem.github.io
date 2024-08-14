@@ -38,7 +38,7 @@ body {
 
 .navlink {
   /* border: 1px solid red; */
-  color: white;
+  /* color: white; */
   text-decoration: none;
   font-size: 20px;
 }
@@ -70,78 +70,100 @@ body {
 
 .tagline {
   border: 1px solid red;
+  display: flex;
   justify-content: flex-start;
   text-align: left;
   font-family: "Cabinet Grotesk Variable", sans-serif;
   font-size: clamp(16px, 1.4vw, 2vw);
+}
+
+.tagline-text {
+  opacity: 0.65;
   padding-left: 1vw;
 }
 
 .highlight {
   /* border: 1px solid red; */
   font-weight: bold;
+  opacity: 1;
 }
 
 .footer {
-  /* display: flex; */
-  /* justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 7vw 40px;
   /* padding-left: 5vw; */
   /* padding: 20px; */
-  background-color: #131113;
+  /* background-color: #131113; */
 
-  grid-column-gap: 40px;
+  /* grid-column-gap: 40px;
   grid-row-gap: 16px;
   grid-template-rows: auto;
   grid-template-columns: 2fr 1fr 1fr;
   grid-auto-columns: 1fr;
-  margin: 40px 40px 0;
-  padding-bottom: 40px;
+  margin: 40px 40px 0; */
   font-family: "Cabinet Grotesk Variable";
-  display: grid;
+  /* display: grid; */
 }
 
-.footer-left,
-.footer-center,
-.footer-right {
+.footer-box-one,
+.footer-box-two,
+.footer-box-three,
+.footer-box-four {
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.footer-left {
-  text-align: left;
-  display: flex;
-  color: #fff;
-
-  
-  font-size: 21px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-decoration-line: underline;
+  /* justify-content: center; */
 }
 
-.footer-center {
+.footer-box-one {
+  text-align: left;
+}
+
+.footer-name{
+  text-decoration: underline;
+}
+
+.portfolio-version{
+  opacity: 0.65;
+}
+
+
+.footer-box-two {
   text-align: center;
+  opacity: 0.65;
 }
 
-.footer-right {
+
+.footer-box-three {
   text-align: right;
 }
 
+.contact{
+  opacity: 0.65;
+}
 .contact-email {
-  color: white;
+  color: #faf5ed;
   text-decoration: none;
 }
 
-.social-icons {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
+
+.footer-box-four {
+  text-align: right;
+}
+
+.resume {
+  color: #faf5ed;
+  text-decoration: none;
+  opacity: 0.65;
 }
 
 .social-icon {
-  color: white;
+  color: #faf5ed;
   text-decoration: none;
 }
 
