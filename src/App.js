@@ -1,16 +1,41 @@
 // import logo from './pingu-no-bg.png';
 import './App.css';
 import './realtimecolors.css';
-import Homepage from './components/homepage';
+import Homepage from './components/desktop/homepage';
+import MobileHomepage from './components/mobile/mobileHomepage';
+import { isMobile, browserName } from "react-device-detect";
+import MediaQuery from 'react-responsive';
 
 function App() {
+
   return (
     <div className="App">
-
-      <Homepage />
+      <MediaQuery maxWidth={650}>
+        <MobileHomepage />
+      </MediaQuery>
+      <MediaQuery minWidth={650}>
+        <Homepage />
+      </MediaQuery>
     </div>
-
   );
+
+  // if (isMobile) {
+  //   console.log('user is on mobile');
+  //   return (
+  //     <div className="App">
+  //       <MobileHomepage />
+  //     </div>
+  //   );
+  // }
+
+  // console.log('user is on', browserName);
+  // return (
+  //   <div className="App">
+
+  //     <Homepage />
+  //   </div>
+
+  // );
   // return (
   //   <div className="App">
   //     <header className="App-header">
