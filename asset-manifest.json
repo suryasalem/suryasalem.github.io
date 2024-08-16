@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.6192becb.css",
-    "main.js": "/static/js/main.c9d9dbc0.js",
+    "main.css": "/static/css/main.be8707ec.css",
+    "main.js": "/static/js/main.13cc09aa.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/Satoshi-VariableItalic.ttf": "/static/media/Satoshi-VariableItalic.9519fea9567e2405bc08.ttf",
     "static/media/Satoshi-Variable.ttf": "/static/media/Satoshi-Variable.536fda9b164542087fc7.ttf",
     "static/media/CabinetGrotesk-Variable.ttf": "/static/media/CabinetGrotesk-Variable.5d8b44553adc33857c97.ttf",
+    "static/media/pingu-no-bg.png": "/static/media/pingu-no-bg.24ea78f7b1abfc52c705.png",
     "static/media/Satoshi-MediumItalic.ttf": "/static/media/Satoshi-MediumItalic.5db9ec801a311bdf187b.ttf",
     "static/media/Satoshi-Italic.ttf": "/static/media/Satoshi-Italic.89c785539a22fa0dfa0f.ttf",
     "static/media/Satoshi-BoldItalic.ttf": "/static/media/Satoshi-BoldItalic.95e24575ceb54c131b6b.ttf",
@@ -68,12 +69,12 @@
     "static/media/CabinetGrotesk-Black.woff2": "/static/media/CabinetGrotesk-Black.811203077326fa601dfa.woff2",
     "static/media/cursor.cur": "/static/media/cursor.6296e6d8b55bb1cb2fa4.cur",
     "index.html": "/index.html",
-    "main.6192becb.css.map": "/static/css/main.6192becb.css.map",
-    "main.c9d9dbc0.js.map": "/static/js/main.c9d9dbc0.js.map",
+    "main.be8707ec.css.map": "/static/css/main.be8707ec.css.map",
+    "main.13cc09aa.js.map": "/static/js/main.13cc09aa.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6192becb.css",
-    "static/js/main.c9d9dbc0.js"
+    "static/css/main.be8707ec.css",
+    "static/js/main.13cc09aa.js"
   ]
 }
