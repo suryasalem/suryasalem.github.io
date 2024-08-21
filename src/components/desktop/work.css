@@ -1,0 +1,96 @@
+.work-title {
+  /* border: 1px solid red; */
+  font-family: "Satoshi-Variable", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+  padding-left: 1vw;
+  /* max-width: calc(100% - 13vw); */
+  /* box-sizing: border-box; */
+  font-size: clamp(50px, 12.6vw, 13vw);
+  /* font-size: 12.6vw; */
+  white-space: nowrap;
+}
+
+.work-grid {
+    border: 1px solid red;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    grid-auto-flow: row;
+    margin-top: 15%;
+    /* margin-left: 7vw;
+    margin-right: 7vw; */
+    /* gap: 2vw;
+    padding: 2vw; */
+    /* justify-items: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    
+
+}
+
+.project-link {
+  text-decoration: none;
+  max-width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.work-item {
+    border: 1px solid red;
+    display: inline-block;
+    /* display: flex; */
+    /* justify-content:stretch; */
+    /* align-items: center; */
+    overflow: hidden;
+    width: 100%;
+}
+
+.project-container {
+  /* border: 1px solid red; */
+  opacity: 1;
+  padding: 40px;
+  transition: opacity 0.5s;
+  text-decoration: none;
+  text-align: left;
+  color: #faf5ed;
+  font-family: "Satoshi-Variable", sans-serif;
+}
+
+.project-header {
+  border: 1px solid red;
+  font-size: 2.5vw;
+  width: 100%;
+  position: relative;
+
+}
+
+.project-title {
+  padding-top: 300px;
+}
+
+.project-description {
+  font-size: 1.5vw;
+  margin-top: 20px;
+}
+
+.work-item.leidos {
+  background-image: url(../images/leidos.png);
+}
+
+.work-item.dripdrop {
+  background-image: url(../images/leidos.png);
+}
+
+/* .work-item img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */

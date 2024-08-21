@@ -1,13 +1,16 @@
-import React from "react";
-import "./homepage.css";
-import { SiLinkedin, SiGithub } from "react-icons/si"
+import { SiLinkedin, SiGithub } from "react-icons/si";
 import { IconContext } from "react-icons";
+import "./work.css";
 
-const Homepage = () => {
+import leidos from "../images/leidos.png";
+
+const Work = () => {
   return (
     <body>
       <header className="header">
-        <a href="/" className="name">Surya Salem</a>
+        <a href="/" className="name">
+          Surya Salem
+        </a>
         <nav className="nav">
           <a href="/work" className="navlink">
             work
@@ -28,15 +31,58 @@ const Homepage = () => {
           </a>
         </nav>
       </header>
+
       <main className="main">
-        <div className="intro">HI, I'M SURYA</div>
+        <div className="work-title">Work</div>
         <div className="tagline">
           <div className="tagline-text">
-            a software engineer passionate in &nbsp;
+            here are some of my previous &nbsp;
           </div>
-          <div className="highlight">full-stack development</div>
+          <div className="highlight">work experiences and school projects</div>
+        </div>
+        <div className="work-grid">
+          <a
+            href="https://github.com/TaewoooK/dripdrop407"
+            target="_blank"
+            rel="noreferrer"
+            className="project-link"
+          >
+            <div className="work-item dripdrop">
+              <div className="project-container">
+                <div className="project-header">
+                  Social Fashion <br /> Platform
+                </div>
+                <div className="project-desc-text">
+                  <div className="project-title">DripDrop</div>
+                  <div className="project-description">
+                    A full stack web application that allows users to create and
+                    share playlists.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div className="work-item leidos">
+            {/* <img src={leidos} alt="leidos" className="work-item" /> */}
+          </div>
+          <div className="work-item">
+            {/* <img src="https://via.placeholder.com/150" alt="erd" /> */}
+          </div>
+          <div className="work-item">
+            <img src="https://via.placeholder.com/150" alt="align" />
+          </div>
+          <div className="work-item">
+            <img src="https://via.placeholder.com/150" alt="stemspace" />
+          </div>
+          <div className="work-item">
+            <img src="https://via.placeholder.com/150" alt="minecraft" />
+          </div>
+          <div className="work-item">
+            <img src="https://via.placeholder.com/150" alt="john-deere" />
+          </div>
         </div>
       </main>
+
       <footer className="footer">
         <div className="footer-box-one">
           <div className="footer-name">Surya Salem</div>
@@ -87,4 +133,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Work;

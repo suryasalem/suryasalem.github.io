@@ -30,6 +30,8 @@ body {
 .name {
   /* border: 1px solid red; */
   font-size: 24px;
+  color: #faf5ed;
+  text-decoration: none;
 }
 
 .nav {
@@ -42,6 +44,12 @@ body {
   color: #faf5ed;
   text-decoration: none;
   font-size: 20px;
+  /* transition: transform 1s ease-in-out;  */
+}
+
+.navlink:hover {
+  color: #faf5ed;
+  text-decoration: underline;
 }
 
 .main {
@@ -112,8 +120,6 @@ body {
 .footer-box-three,
 .footer-box-four {
   /* border: 1px solid red; */
-  display: flex;
-  flex-direction: column;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -122,6 +128,8 @@ body {
 }
 
 .footer-box-one {
+  display: flex;
+  flex-direction: column;
   text-align: left;
 }
 
@@ -138,12 +146,16 @@ body {
 }
 
 .footer-box-two {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   opacity: 0.65;
 }
 
 
 .footer-box-three {
+  display: flex;
+  flex-direction: column;
   text-align: right;
 }
 
@@ -157,7 +169,10 @@ body {
 
 
 .footer-box-four {
+  /* border: 1px solid red; */
   text-align: right;
+  display: flex;
+  justify-content: space-between;
 }
 
 .resume {
@@ -167,8 +182,19 @@ body {
 }
 
 .social-icon {
+  border: 1px solid red;
   color: #faf5ed;
   text-decoration: none;
+}
+
+.linkedin-icon {
+  color:#faf5ed;
+  padding-left: 1vw;
+}
+
+.github-icon {
+  color:#faf5ed;
+  padding-right: 1vw;
 }
 
 /* @media screen and (max-width: 480px) {

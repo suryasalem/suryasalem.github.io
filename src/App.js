@@ -1,10 +1,15 @@
 // import logo from './pingu-no-bg.png';
 import './App.css';
 import './realtimecolors.css';
-import Homepage from './components/desktop/homepage';
-import MobileHomepage from './components/mobile/mobileHomepage';
 import { isMobile, browserName } from "react-device-detect";
 import MediaQuery from 'react-responsive';
+
+import Homepage from './components/desktop/homepage';
+import Work from './components/desktop/work';
+
+import MobileHomepage from './components/mobile/mobileHomepage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 function App() {
 
@@ -14,7 +19,14 @@ function App() {
         <MobileHomepage />
       </MediaQuery>
       <MediaQuery minWidth={650}>
-        <Homepage />
+        <Router>
+          {/* <Homepage /> */}
+
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/work" element={<Work />} />
+          </Routes>
+        </Router>
       </MediaQuery>
     </div>
   );
