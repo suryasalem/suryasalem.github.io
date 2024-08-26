@@ -13,3 +13,14 @@
   white-space: nowrap;
 }
 
+.work-item.dripdrop {
+    background-image: url(../images/dripdrop.png);
+}
+
+.work-item.erd {
+    background-image: url(../images/diagram.webp);
+}
+
+.work-item.stemspace {
+    background-image: url(../images/stemspace.jpg);
+}
