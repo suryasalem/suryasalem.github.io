@@ -12,7 +12,7 @@ const Homepage = () => {
           <a href="/work" className="navlink">
             work
           </a>
-          <a href="#fun" className="navlink">
+          <a href="/projects" className="navlink">
             projects
           </a>
           <a href="#about" className="navlink">

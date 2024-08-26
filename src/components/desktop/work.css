@@ -14,7 +14,7 @@
 }
 
 .work-grid {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: 1fr 1fr;
@@ -37,7 +37,7 @@
 }
 
 .work-item {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: inline-block;
     /* display: flex; */
     /* justify-content:stretch; */
@@ -66,7 +66,7 @@
 }
 
 .project-header {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-size: 2vw;
   width: 100%;
   position: relative;

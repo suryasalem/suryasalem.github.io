@@ -1,8 +1,8 @@
 import { SiLinkedin, SiGithub } from "react-icons/si";
 import { IconContext } from "react-icons";
-import "./work.css";
+import "./projects.css";
 
-const Work = () => {
+const Projects = () => {
   return (
     <body>
       <header className="header">
@@ -31,78 +31,75 @@ const Work = () => {
       </header>
 
       <main className="main">
-        <div className="work-title">Work</div>
+        <div className="project-page-title">Projects</div>
         <div className="tagline">
-          <div className="tagline-text">
-            here are some of my previous &nbsp;
-          </div>
-          <div className="highlight">work experiences</div>
+          <div className="tagline-text">some side projects i made &nbsp;</div>
+          <div className="highlight">enjoy!</div>
         </div>
         <div className="work-grid">
           <a
-            href="https://www.leidos.com/"
+            href="https://github.com/TaewoooK/dripdrop407"
             target="_blank"
             rel="noreferrer"
             className="project-link"
           >
-            <div className="work-item leidos">
+            <div className="work-item dripdrop">
               <div className="project-container">
                 <div className="project-header">
-                  Automated Security <br /> with Scripting
+                  Social Fashion <br /> Platform
                 </div>
                 <div className="project-desc-text">
-                  <div className="project-title">Leidos</div>
+                  <div className="project-title">
+                    DripDrop - CS 407 (Senior Project)
+                  </div>
                   <div className="project-description">
-                    May 2023 - July 2023
+                    January 2024 - May 2024
                   </div>
                 </div>
               </div>
             </div>
           </a>
-
           <a
-            href="https://www.aligntech.com/"
+            href="https://selfservice.mypurdue.purdue.edu/prod/bzwsrch.p_catalog_detail?subject=CS&term=CURRENT&cnbr=47300"
             target="_blank"
             rel="noreferrer"
             className="project-link"
           >
-            <div className="work-item align">
+            <div className="work-item erd">
               <div className="project-container">
                 <div className="project-header">
-                  Security and Automation <br /> for Data Pipelines
+                  Auto-grouping <br /> ERD images
                 </div>
                 <div className="project-desc-text">
-                  <div className="project-title">Align Technology</div>
+                  <div className="project-title">
+                    ERD Classification - CS 473
+                  </div>
+                  <div className="project-description">November 2023</div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://github.com/Bmeshanko/StemSpace"
+            rel="noreferrer"
+            target="_blank"
+            className="project-link"
+          >
+            <div className="work-item stemspace">
+              <div className="project-container">
+                <div className="project-header">
+                  A Simple Social <br /> Media Platform
+                </div>
+                <div className="project-desc-text">
+                  <div className="project-title">StemSpace - CS 307</div>
                   <div className="project-description">
-                    May 2022 - August 2022
+                    January 2022 - May 2022
                   </div>
                 </div>
               </div>
             </div>
           </a>
-
-          <a
-            href={`${process.env.PUBLIC_URL}/build-files/TDM_Symposium2022_Poster_Minecraft.pdf`}
-            rel="noreferrer"
-            target="_blank"
-            className="project-link"
-          >
-            <div className="work-item minecraft">
-              <div className="project-container">
-                <div className="project-header">
-                  Analyzing Social Data <br /> for Minecraft
-                </div>
-                <div className="project-desc-text">
-                  <div className="project-title">Microsoft  Minecraft</div>
-                  <div className="project-description">
-                    August 2021 - May 2022
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          
-          <a
+          {/* <a
             href={`${process.env.PUBLIC_URL}/build-files/2021JohnDeere-Golf-DMSymposiumPosterFinal.pdf`}
             target="_blank"
             rel="noreferrer"
@@ -121,7 +118,7 @@ const Work = () => {
                 </div>
               </div>
             </div>
-          </a>
+          </a> */}
         </div>
       </main>
 
@@ -175,4 +172,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Projects;
