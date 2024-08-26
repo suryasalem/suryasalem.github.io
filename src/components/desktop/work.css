@@ -27,11 +27,6 @@
     /* gap: 2vw;
     padding: 2vw; */
     /* justify-items: center; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    
-
 }
 
 .project-link {
@@ -49,42 +44,60 @@
     /* align-items: center; */
     overflow: hidden;
     width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 .project-container {
   /* border: 1px solid red; */
-  opacity: 1;
+  opacity: 0;
   padding: 40px;
-  transition: opacity 0.5s;
+  transition: opacity 0.3s;
   text-decoration: none;
   text-align: left;
   color: #faf5ed;
   font-family: "Satoshi-Variable", sans-serif;
 }
 
+.project-container:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
 .project-header {
   border: 1px solid red;
-  font-size: 2.5vw;
+  font-size: 2vw;
   width: 100%;
   position: relative;
 
 }
 
 .project-title {
+  font-size: 1vw;
   padding-top: 300px;
 }
 
 .project-description {
-  font-size: 1.5vw;
-  margin-top: 20px;
+  font-size: 1vw;
+  opacity: 0.65;
+  /* margin-top: 10px; */
 }
 
 .work-item.leidos {
   background-image: url(../images/leidos.png);
 }
 
-.work-item.dripdrop {
-  background-image: url(../images/leidos.png);
+.work-item.align {
+  background-image: url(../images/align.jpg);
+}
+
+.work-item.minecraft {
+  background-image: url(../images/minecraft.jpg);
+}
+
+.work-item.john-deere {
+  background-image: url(../images/john-deere.jpg);
 }
 
 /* .work-item img {

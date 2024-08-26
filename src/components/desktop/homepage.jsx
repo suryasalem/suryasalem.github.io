@@ -13,7 +13,7 @@ const Homepage = () => {
             work
           </a>
           <a href="#fun" className="navlink">
-            fun
+            projects
           </a>
           <a href="#about" className="navlink">
             about
