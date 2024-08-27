@@ -2,10 +2,31 @@ import React from "react";
 import { SiLinkedin, SiGithub } from "react-icons/si"
 import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
+import TextTransition, {presets} from "react-text-transition";
 
 import "./homepage.css";
 
+const descriptions = ['full-stack development', 'machine learning', 'artificial intelligence', 'web development', 'ui/ux & web design', 'photography', 'dance', 'gaming']
+
 const Homepage = () => {
+  const [currentDescription, setCurrentDescription] = React.useState(descriptions[0]);
+
+  function setRandomDescription() {
+    const idx = Math.floor(Math.random() * descriptions.length);
+    let newDescription = descriptions[idx];
+    if (newDescription === currentDescription) {
+      setRandomDescription();
+    } else {
+      setCurrentDescription(newDescription);
+    }
+  }
+  
+  React.useEffect(() => {
+    setTimeout(() => {
+      setRandomDescription();
+    }, 3000);
+  }, [currentDescription]);
+
   return (
     <body>
       <header className="header">
@@ -36,7 +57,15 @@ const Homepage = () => {
           <div className="tagline-text">
             a software engineer passionate in &nbsp;
           </div>
-          <div className="highlight">full-stack development</div>
+          {/* <div className="highlight">{currentDescription}</div> */}
+          <div className="highlight">
+            <TextTransition
+              springConfig={presets.default}
+              inline={true}
+            >
+              {currentDescription}
+            </TextTransition>
+            </div>
         </div>
       </main>
       <footer className="footer">
