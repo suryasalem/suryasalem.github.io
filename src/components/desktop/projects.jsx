@@ -1,24 +1,26 @@
 import { SiLinkedin, SiGithub } from "react-icons/si";
 import { IconContext } from "react-icons";
+import { Link } from "react-router-dom";
+
 import "./projects.css";
 
 const Projects = () => {
   return (
     <body>
       <header className="header">
-        <a href="/" className="name">
+        <Link to="/" className="name">
           Surya Salem
-        </a>
+        </Link>
         <nav className="nav">
-          <a href="/work" className="navlink">
+          <Link to="/work" className="navlink">
             work
-          </a>
-          <a href="/projects" className="navlink">
+          </Link>
+          <Link to="/projects" className="navlink">
             projects
-          </a>
-          <a href="/about" className="navlink">
+          </Link>
+          <Link to="/about" className="navlink">
             about
-          </a>
+          </Link>
           <a
             href={`${process.env.PUBLIC_URL}/build-files/Surya_Salem_Resume.pdf`}
             rel="noreferrer"

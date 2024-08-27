@@ -10,7 +10,7 @@ import Projects from './components/desktop/projects';
 import About from './components/desktop/about';
 
 import MobileHomepage from './components/mobile/mobileHomepage';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 function App() {
