@@ -16,7 +16,7 @@ const Projects = () => {
           <a href="/projects" className="navlink">
             projects
           </a>
-          <a href="#about" className="navlink">
+          <a href="/about" className="navlink">
             about
           </a>
           <a

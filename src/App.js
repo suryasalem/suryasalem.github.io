@@ -7,6 +7,7 @@ import MediaQuery from 'react-responsive';
 import Homepage from './components/desktop/homepage';
 import Work from './components/desktop/work';
 import Projects from './components/desktop/projects';
+import About from './components/desktop/about';
 
 import MobileHomepage from './components/mobile/mobileHomepage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -27,6 +28,7 @@ function App() {
             <Route path="/" element={<Homepage />} />
             <Route path="/work" element={<Work />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </Router>
       </MediaQuery>

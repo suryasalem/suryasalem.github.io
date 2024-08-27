@@ -16,7 +16,7 @@ const Work = () => {
           <a href="/projects" className="navlink">
             projects
           </a>
-          <a href="#about" className="navlink">
+          <a href="/about" className="navlink">
             about
           </a>
           <a
@@ -101,7 +101,7 @@ const Work = () => {
               </div>
             </div>
           </a>
-          
+
           <a
             href={`${process.env.PUBLIC_URL}/build-files/2021JohnDeere-Golf-DMSymposiumPosterFinal.pdf`}
             target="_blank"
