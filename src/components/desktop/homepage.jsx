@@ -11,7 +11,7 @@ const descriptions = ['full-stack development', 'machine learning', 'artificial 
 const Homepage = () => {
   const [currentDescription, setCurrentDescription] = React.useState(descriptions[0]);
 
-  function setRandomDescription() {
+  const setRandomDescription = React.useCallback(() => {
     const idx = Math.floor(Math.random() * descriptions.length);
     let newDescription = descriptions[idx];
     if (newDescription === currentDescription) {
@@ -19,13 +19,14 @@ const Homepage = () => {
     } else {
       setCurrentDescription(newDescription);
     }
-  }
+  }, [currentDescription])
   
   React.useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setRandomDescription();
-    }, 3000);
-  }, [currentDescription]);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, [currentDescription, setRandomDescription]);
 
   return (
     <body>
