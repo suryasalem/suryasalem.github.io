@@ -10,6 +10,11 @@ import Projects from './components/desktop/projects';
 import About from './components/desktop/about';
 
 import MobileHomepage from './components/mobile/mobileHomepage';
+import MobileWork from './components/mobile/mobileWork';
+import MobileProjects from "./components/mobile/mobileProjects";
+import MobileAbout from "./components/mobile/mobileAbout";
+
+
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 
@@ -17,10 +22,19 @@ function App() {
 
   return (
     <div className="App">
-      <MediaQuery maxWidth={650}>
-        <MobileHomepage />
+      <MediaQuery maxWidth={700}>
+        <Router>
+          {/* <Homepage /> */}
+
+          <Routes>
+            <Route path="/" element={<MobileHomepage />} />
+            <Route path="/work" element={<MobileWork />} />
+            <Route path="/projects" element={<MobileProjects />} />
+            <Route path="/about" element={<MobileAbout />} />
+          </Routes>
+        </Router>
       </MediaQuery>
-      <MediaQuery minWidth={650}>
+      <MediaQuery minWidth={700}>
         <Router>
           {/* <Homepage /> */}
 

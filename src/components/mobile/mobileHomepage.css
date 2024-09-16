@@ -10,38 +10,6 @@ body {
   padding-right: var(--space-lg);
 }
 
-.m-header {
-  /* border: 1px solid red; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 25px 7vw 10px;
-  padding-right: 7vw;
-  padding-left: 7vw;
-}
-
-.m-logo {
-  /* border: 1px solid red; */
-  width: 35px;
-  height: 35px;
-  object-fit: conver;
-  /* font-size: 24px; */
-}
-
-
-.m-nav {
-  display: flex;
-  gap: 2vw;
-  font-family: "CabinetGrotesk-Variable", sans-serif;
-}
-
-.m-navlink {
-  /* border: 1px solid red; */
-  color: #faf5ed;
-  text-decoration: none;
-  font-size: 16px;
-}
-
 .m-main {
   /* border: 1px solid red; */
   /* text-align: center; */
@@ -89,88 +57,7 @@ body {
   padding-left: 1vw;
 }
 
-.m-footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 7vw 30px;
-  /* padding-left: 5vw; */
-  /* padding: 20px; */
-  /* background-color: #131113; */
 
-  /* grid-column-gap: 40px;
-  grid-row-gap: 16px;
-  grid-template-rows: auto;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-auto-columns: 1fr;
-  margin: 40px 40px 0; */
-  font-family: "CabinetGrotesk-Variable", sans-serif;
-  /* display: grid; */
-}
-
-.m-footer-box-one,
-.m-footer-box-two,
-.m-footer-box-three,
-.m-footer-box-four {
-  /* border: 1px solid red; */
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  /* justify-content: center; */
-}
-
-.m-footer-box-one {
-  text-align: left;
-}
-
-.m-footer-name{
-  text-decoration: underline;
-}
-
-.m-portfolio-version{
-  opacity: 0.65;
-}
-
-.m-copyright {
-  opacity: 0.65;
-}
-
-.m-footer-box-two {
-  text-align: center;
-  opacity: 0.65;
-}
-
-
-.m-footer-box-three {
-  text-align: right;
-}
-
-.m-contact{
-  opacity: 0.65;
-}
-.m-contact-email {
-  color: #faf5ed;
-  text-decoration: none;
-  opacity: 0.65;
-}
-
-
-.m-footer-box-four {
-  text-align: right;
-}
-
-.m-resume {
-  color: #faf5ed;
-  text-decoration: none;
-  opacity: 0.65;
-}
-
-.m-social-icon {
-  color: #faf5ed;
-  text-decoration: none;
-}
 
 /* @media screen and (max-width: 480px) {
   .footer {

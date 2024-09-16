@@ -1,0 +1,31 @@
+.m-header {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 7vw 10px;
+  padding-right: 7vw;
+  padding-left: 7vw;
+}
+
+.m-logo {
+  /* border: 1px solid red; */
+  width: 35px;
+  height: 35px;
+  object-fit: conver;
+  /* font-size: 24px; */
+}
+
+
+.m-nav {
+  display: flex;
+  gap: 2vw;
+  font-family: "CabinetGrotesk-Variable", sans-serif;
+}
+
+.m-navlink {
+  /* border: 1px solid red; */
+  color: #faf5ed;
+  text-decoration: none;
+  font-size: 16px;
+}
