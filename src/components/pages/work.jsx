@@ -1,21 +1,21 @@
-import MobileHeader from "./mobileHeader.jsx";
-import MobileFooter from "./mobileFooter.jsx";
-import "./mobileWork.css";
+import Header from "./header";
+import Footer from "./footer";
+import "./work.css";
 
-const mobileWork = () => {
+const Work = () => {
   return (
     <body>
-      <MobileHeader />
+      <Header />
 
-      <main className="m-main">
+      <main className="main">
         <div className="work-title">Work</div>
-        <div className="m-tagline">
-          <div className="m-tagline-text">
+        <div className="tagline">
+          <div className="tagline-text">
             here are some of my previous &nbsp;
           </div>
-          <div className="m-highlight">work experiences</div>
+          <div className="highlight">work experiences</div>
         </div>
-        <div className="m-work-grid">
+        <div className="work-grid">
           <a
             href="https://www.leidos.com/"
             target="_blank"
@@ -102,9 +102,9 @@ const mobileWork = () => {
         </div>
       </main>
 
-      <MobileFooter />
+      <Footer />
     </body>
   );
 };
 
-export default mobileWork;
+export default Work;

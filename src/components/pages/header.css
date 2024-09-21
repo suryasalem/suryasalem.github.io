@@ -1,0 +1,61 @@
+.header {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 7vw 30px;
+  font-family: "CabinetGrotesk-Variable", sans-serif;
+  font-feature-settings: "salt" on, "ss01" on;
+  /* padding-right: 7vw;
+  padding-left: 7vw; */
+}
+
+.name {
+  /* border: 1px solid red; */
+  font-size: 24px;
+  color: #faf5ed;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  font-family: "CabinetGrotesk-Variable", sans-serif;
+  gap: 2vw;
+}
+
+.navlink {
+  /* border: 1px solid red; */
+  color: #faf5ed;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navlink:hover {
+  color: #faf5ed;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 700px) {
+  .header {
+    align-items: center;
+    padding: 25px 7vw 10px;
+    padding-right: 7vw;
+    padding-left: 7vw;
+  }
+
+  .logo {
+    /* border: 1px solid red; */
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+  }
+
+  .nav {
+    gap: 3.5vw;
+  }
+
+  .navlink {
+    /* border: 1px solid red; */
+    font-size: 16px;
+  }
+}

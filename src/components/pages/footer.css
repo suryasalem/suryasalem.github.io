@@ -1,0 +1,109 @@
+.footer {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 7vw 40px;
+  font-family: "CabinetGrotesk-Variable", sans-serif;
+  font-feature-settings: "salt" on, "ss01" on;
+}
+
+.footer-box-one,
+.footer-box-two,
+.footer-box-three,
+.footer-box-four {
+  /* border: 1px solid red; */
+  display: flex;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-box-one {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.footer-name {
+  text-decoration: underline;
+}
+
+.portfolio-version {
+  opacity: 0.65;
+}
+
+.copyright {
+  opacity: 0.65;
+}
+
+.footer-box-two {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0.65;
+}
+
+.footer-box-three {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.contact {
+  opacity: 0.65;
+}
+
+.contact-email {
+  color: #faf5ed;
+  text-decoration: none;
+}
+
+.footer-box-four {
+  /* border: 1px solid red; */
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume {
+  color: #faf5ed;
+  text-decoration: none;
+  opacity: 0.65;
+}
+
+.social-icon {
+  /* border: 1px solid red; */
+  color: #faf5ed;
+  text-decoration: none;
+}
+
+.linkedin-icon {
+  color: #faf5ed;
+  padding-left: 1vw;
+}
+
+.github-icon {
+  color: #faf5ed;
+  padding-right: 1vw;
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    padding: 20px 7vw 30px;
+  }
+
+  .footer-box-one,
+  .footer-box-two,
+  .footer-box-three,
+  .footer-box-four {
+    /* border: 1px solid red; */
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .contact-email {
+    opacity: 0.65;
+  }
+
+}

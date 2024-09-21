@@ -1,71 +1,29 @@
-// import logo from './pingu-no-bg.png';
 import './App.css';
 import './realtimecolors.css';
-import { isMobile, browserName } from "react-device-detect";
-import MediaQuery from 'react-responsive';
 
-import Homepage from './components/desktop/homepage';
-import Work from './components/desktop/work';
-import Projects from './components/desktop/projects';
-import About from './components/desktop/about';
-
-import MobileHomepage from './components/mobile/mobileHomepage';
-import MobileWork from './components/mobile/mobileWork';
-import MobileProjects from "./components/mobile/mobileProjects";
-import MobileAbout from "./components/mobile/mobileAbout";
-
+import Homepage from './components/pages/homepage';
+import Work from './components/pages/work';
+import Projects from './components/pages/projects';
+import About from './components/pages/about';
 
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 function App() {
-
   return (
     <div className="App">
-      <MediaQuery maxWidth={700}>
-        <Router>
-          {/* <Homepage /> */}
-
-          <Routes>
-            <Route path="/" element={<MobileHomepage />} />
-            <Route path="/work" element={<MobileWork />} />
-            <Route path="/projects" element={<MobileProjects />} />
-            <Route path="/about" element={<MobileAbout />} />
-          </Routes>
-        </Router>
-      </MediaQuery>
-      <MediaQuery minWidth={700}>
-        <Router>
-          {/* <Homepage /> */}
-
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </Router>
-      </MediaQuery>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Router>
+      
     </div>
   );
 
-  // if (isMobile) {
-  //   console.log('user is on mobile');
-  //   return (
-  //     <div className="App">
-  //       <MobileHomepage />
-  //     </div>
-  //   );
-  // }
-
-  // console.log('user is on', browserName);
-  // return (
-  //   <div className="App">
-
-  //     <Homepage />
-  //   </div>
-
-  // );
   // return (
   //   <div className="App">
   //     <header className="App-header">

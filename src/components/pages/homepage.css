@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  /* font-family: 'Arial', sans-serif; */
+  color: #faf5ed;
+  background-color: #131113;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-left: var(--space-lg);
+  padding-right: var(--space-lg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.main {
+  /* border: 1px solid red; */
+  /* text-align: center; */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7vw;
+}
+
+.intro {
+  /* border: 1px solid red; */
+  text-align: center;
+  font-family: "Satoshi-Variable", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: normal;
+  /* margin: 0; */
+  /* max-width: calc(100% - 13vw); */
+  /* box-sizing: border-box; */
+  font-size: clamp(50px, 12.6vw, 13vw);
+  /* font-size: 12.6vw; */
+  white-space: nowrap;
+}
+
+.tagline {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  font-family: "CabinetGrotesk-Variable", sans-serif;
+  font-feature-settings: "salt" on, "ss01" on;
+  font-size: clamp(22px, 1.5vw, 2vw);
+}
+
+.tagline-text {
+  opacity: 0.65;
+  padding-left: 1vw;
+}
+
+.highlight {
+  /* border: 1px solid red; */
+  font-weight: bold;
+  opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+  /* body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #faf5ed;
+    background-color: #131113;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+  } */
+
+  .main {
+    /* border: 1px solid red; */
+    /* text-align: center; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7vw;
+  }
+
+  .intro {
+    /* border: 1px solid red; */
+    text-align: center;
+    font-family: "Satoshi-Variable", sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: normal;
+    /* margin: 0; */
+    /* max-width: calc(100% - 13vw); */
+    /* box-sizing: border-box; */
+    font-size: clamp(30px, 12.6vw, 13vw);
+    /* font-size: 12.6vw; */
+    white-space: nowrap;
+  }
+
+  .tagline {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: "CabinetGrotesk-Variable", sans-serif;
+    font-size: clamp(18px, 1.4vw, 2vw);
+  }
+
+  .tagline-text {
+    opacity: 0.65;
+    padding-left: 1vw;
+  }
+
+  .highlight {
+    /* border: 1px solid red; */
+    font-weight: bold;
+    opacity: 1;
+    padding-left: 1vw;
+  }
+}

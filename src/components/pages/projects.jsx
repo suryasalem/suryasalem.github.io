@@ -1,19 +1,19 @@
-import MobileHeader from "./mobileHeader.jsx";
-import MobileFooter from "./mobileFooter.jsx";
-import "./mobileProjects.css";
+import Header from "./header";
+import Footer from "./footer"
+import "./projects.css";
 
-const mobileProjects = () => {
+const Projects = () => {
   return (
     <body>
-      <MobileHeader />
+      <Header />
 
-      <main className="m-main">
+      <main className="main">
         <div className="project-page-title">Projects</div>
-        <div className="m-tagline">
-          <div className="m-tagline-text">some side projects i made &nbsp;</div>
-          <div className="m-highlight">enjoy!</div>
+        <div className="tagline">
+          <div className="tagline-text">some side projects i made &nbsp;</div>
+          <div className="highlight">enjoy!</div>
         </div>
-        <div className="m-work-grid">
+        <div className="work-grid">
           <a
             href="https://github.com/TaewoooK/dripdrop407"
             target="_blank"
@@ -76,12 +76,13 @@ const mobileProjects = () => {
               </div>
             </div>
           </a>
+          
         </div>
       </main>
 
-      <MobileFooter />
+      <Footer />
     </body>
   );
 };
 
-export default mobileProjects;
+export default Projects;

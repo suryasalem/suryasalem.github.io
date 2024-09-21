@@ -1,0 +1,113 @@
+.about-container {
+  /* border: 1px solid red; */
+  display: flex;
+  /* align-items: stretch; */
+}
+
+.text-boxes {
+  /* border: 1px solid red; */
+  flex: 1;
+}
+
+.image-box {
+  /* border: 1px solid red; */
+  /* height: 100%; */
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 55px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.surya-image {
+  /* border: 1px solid red; */
+  width: auto;
+  height: 100%;
+}
+
+.about-title {
+  /* border: 1px solid red; */
+  font-family: "Satoshi-Variable", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+  padding-left: 1vw;
+  /* max-width: calc(100% - 13vw); */
+  /* box-sizing: border-box; */
+  font-size: clamp(50px, 12.6vw, 13vw);
+  /* font-size: 12.6vw; */
+  white-space: nowrap;
+}
+
+.about-text {
+  padding-top: 20px;
+  padding-left: 1vw;
+  padding-right: 7vw;
+  color: #faf5ed;
+  opacity: 0.65;
+  text-align: left;
+  font-feature-settings: "salt" on, "ss01" on;
+  font-family: "CabinetGrotesk-Variable";
+  font-size: clamp(22px, 1.5vw, 2vw);
+  font-style: normal;
+  /* font-weight: 500; */
+  line-height: normal;
+}
+
+@media screen and (max-width: 700px) {
+  .about-container {
+    /* border: 1px solid red; */
+    flex-direction: column;
+  }
+
+  .image-box {
+    /* border: 1px solid red; */
+    height: fit-content;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .surya-image {
+    /* border: 1px solid red; */
+    width: auto;
+    height: 550px;
+  }
+
+  .about-title {
+    /* border: 1px solid red; */
+    font-family: "Satoshi-Variable", sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: normal;
+    text-align: left;
+    padding-left: 1vw;
+    /* max-width: calc(100% - 13vw); */
+    /* box-sizing: border-box; */
+    font-size: clamp(50px, 12.6vw, 13vw);
+    /* font-size: 12.6vw; */
+    white-space: nowrap;
+  }
+
+  .about-text {
+    padding-top: 20px;
+    padding-left: 1vw;
+    padding-right: 7vw;
+    color: #faf5ed;
+    opacity: 0.65;
+    text-align: left;
+    font-feature-settings: "salt" on, "ss01" on;
+    font-family: "CabinetGrotesk-Variable";
+    font-size: 20px;
+    font-style: normal;
+    /* font-weight: 500; */
+    line-height: normal;
+  }
+}
