@@ -1,7 +1,4 @@
-import { SiLinkedin, SiGithub } from "react-icons/si";
-import { IconContext } from "react-icons";
 import surya from "../images/me.png";
-import { Link } from "react-router-dom";
 
 import Header from "./header";
 import Footer from "./footer";
